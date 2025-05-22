@@ -1,0 +1,65 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# Testing
+/coverage
+
+# Next.js
+/.next/
+/out/
+
+# Production
+/build
+
+# Misc
+.DS_Store
+*.pem
+*.log
+*.tsbuildinfo
+
+# Local Environment Variables
+.env.local
+.env.*.local
+# Comment out the next line if you want to commit a default .env file (e.g., for .env.example)
+# but be CAREFUL not to commit sensitive keys.
+.env
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Turbopack
+.turbo
+
+# Firebase
+.firebase/
+firebase-debug.log
+database-debug.log
+*.rules
+# If you are using Firebase emulators, you might want to ignore emulator data
+# .firebase/emulators/
+# firebase.json (if you manage it locally and don't want it in repo for some reason, usually it's committed)
+# serviceAccountKey.json (NEVER commit this if it contains real credentials)
+
+# Chrome extension build output (if you build it within the project)
+# chrome-extension/dist/
+# chrome-extension/*.zip
