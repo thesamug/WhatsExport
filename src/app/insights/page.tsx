@@ -74,15 +74,15 @@ export default function InsightsPage() {
                 <CardDescription>Discover patterns and insights from your WhatsApp contacts.</CardDescription>
             </CardHeader>
             <CardContent>
-                <Button
+ <Button
   onClick={handleGenerateInsights}
- `"destructive"`, `"default"`, `"outline"`, `"ghost"`, `null`, or `undefined`.
-
-### Solution
-To resolve this issue, you need to replace the `variant="primary"` with  disabled={isLoading}
-  variant="default" // Replaced "primary" with "default"
+  disabled={isLoading}
+  variant="default" // Use a valid variant
   className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90"
 >
+  <Sparkles className="mr-2 h-4 w-4" />
+  {isLoading ? 'Generating...' : 'Generate Insights'}
+</Button>
   <Sparkles className="mr-2 h-4 w-4" />
   {isLoading ? 'Generating...' : 'Generate Insights'}
 </ one of the valid options. Based on the context, you likely want to use `"default"` or another variant that aligns with the intended styling.
