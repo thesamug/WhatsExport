@@ -1,4 +1,4 @@
-import type { GenerateInsightsDashboardOutput } from '@/ai/flows/generate-insights-dashboard';
+// Removed: import type { GenerateInsightsDashboardOutput } from '@/ai/flows/generate-insights-dashboard';
 
 export interface Contact {
   id: string;
@@ -19,7 +19,7 @@ export interface Filters {
 export const MOCK_LABELS = ["Work", "Friends", "Family", "Important", "Leads", "New"];
 
 export const MOCK_COUNTRY_CODES = [
-  { label: "All Countries", value: "__ALL__" }, // Changed value from "" to "__ALL__"
+  { label: "All Countries", value: "__ALL__" },
   { label: "USA (+1)", value: "+1" },
   { label: "UK (+44)", value: "+44" },
   { label: "India (+91)", value: "+91" },
@@ -27,4 +27,4 @@ export const MOCK_COUNTRY_CODES = [
   { label: "Brazil (+55)", value: "+55" },
 ];
 
-export type DashboardInsights = GenerateInsightsDashboardOutput;
+// Removed: export type DashboardInsights = GenerateInsightsDashboardOutput;
