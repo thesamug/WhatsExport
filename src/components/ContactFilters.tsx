@@ -145,7 +145,7 @@ export function ContactFilters({ filters, onFiltersChange, onExport, contactCoun
             <XCircle className="mr-2 h-4 w-4" />
             Clear Filters
         </Button>
-        <Button onClick={onExport} variant="accent" className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90">
+        <Button onClick={onExport} className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90">
           <Download className="mr-2 h-4 w-4" />
           Export ({contactCount}) CSV
         </Button>
