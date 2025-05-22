@@ -74,7 +74,7 @@ export default function InsightsPage() {
                 <CardDescription>Discover patterns and insights from your WhatsApp contacts.</CardDescription>
             </CardHeader>
             <CardContent>
-                <Button onClick={handleGenerateInsights} disabled={isLoading} variant="primary" className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90">
+                <Button onClick={handleGenerateInsights} disabled={isLoading} className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90">
                   <Sparkles className="mr-2 h-4 w-4" />
                   {isLoading ? 'Generating...' : 'Generate Insights'}
                 </Button>
