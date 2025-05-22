@@ -1,3 +1,4 @@
+
 'use client';
 
 import * as React from 'react';
@@ -6,13 +7,13 @@ import { AppFooter } from '@/components/AppFooter';
 import { ContactFilters } from '@/components/ContactFilters';
 import { ContactList } from '@/components/ContactList';
 import type { Contact, Filters } from '@/types';
-import { mockContacts } from '@/data/mockContacts';
+// import { mockContacts } from '@/data/mockContacts'; // Removed mockContacts import
 import { exportContactsToCSV } from '@/lib/csv';
 import { useToast } from "@/hooks/use-toast";
 
 export default function HomePage() {
-  const [contacts, setContacts] = React.useState<Contact[]>([]);
-  const [filteredContacts, setFilteredContacts] = React.useState<Contact[]>([]);
+  const [contacts, setContacts] = React.useState<Contact[]>([]); // Initialize with empty array
+  const [filteredContacts, setFilteredContacts] = React.useState<Contact[]>([]); // Initialize with empty array
   const [filters, setFilters] = React.useState<Filters>({
     countryCode: '',
     labels: [],
@@ -21,12 +22,12 @@ export default function HomePage() {
   const { toast } = useToast();
 
   const handleScanContacts = () => {
-    // Simulate scanning contacts
-    setContacts(mockContacts);
-    setFilteredContacts(mockContacts); // Initially show all scanned contacts
+    // Simulate scanning contacts - now prepares for real data
+    setContacts([]); // Clear existing contacts
+    setFilteredContacts([]); 
     toast({
-      title: "Contacts Scanned",
-      description: `${mockContacts.length} contacts have been loaded.`,
+      title: "Ready for WhatsApp Data",
+      description: "The application is ready for contact data from WhatsApp Web. Implement your scanning logic.",
     });
   };
 
