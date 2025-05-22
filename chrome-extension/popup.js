@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (openAppButton) {
     openAppButton.addEventListener('click', function() {
       // IMPORTANT: Replace this URL with the actual URL where your WhatsExport Next.js app is deployed!
-      const appUrl = 'https://YOUR_WHATSAPP_EXPORT_APP_URL_HERE.com';
+      const appUrl = 'https://thesamug.github.io/WhatsExport/';
       
       // Define the properties for the new window
       const windowCreateData = {
