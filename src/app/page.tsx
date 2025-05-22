@@ -6,7 +6,6 @@ import { AppFooter } from '@/components/AppFooter';
 import { ContactFilters } from '@/components/ContactFilters';
 import { ContactList } from '@/components/ContactList';
 import type { Contact, Filters } from '@/types';
-// import { mockContacts } from '@/data/mockContacts'; // Removed mockContacts import
 import { exportContactsToCSV } from '@/lib/csv';
 import { useToast } from "@/hooks/use-toast";
 
@@ -21,12 +20,12 @@ export default function HomePage() {
   const { toast } = useToast();
 
   const handleScanContacts = () => {
-    // Simulate scanning contacts - now prepares for real data
-    setContacts([]); // Clear existing contacts
+    // Clears existing contacts and prepares for real data
+    setContacts([]); 
     setFilteredContacts([]); 
     toast({
       title: "Ready for WhatsApp Data",
-      description: "The application is ready for contact data from WhatsApp Web. Implement your scanning logic.",
+      description: "The application is ready for contact data from WhatsApp Web.",
     });
   };
 
