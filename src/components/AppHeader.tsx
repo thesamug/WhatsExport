@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ScanLine, LineChart, LogIn, Briefcase } from 'lucide-react';
+import { ScanLine, LogIn, Briefcase } from 'lucide-react';
 
 interface AppHeaderProps {
   onScanContacts?: () => void;
@@ -20,12 +20,6 @@ export function AppHeader({ onScanContacts }: AppHeaderProps) {
             Scan
           </Button>
         )}
-        <Button variant="ghost" size="sm" asChild aria-label="Insights Dashboard">
-          <Link href="/insights">
-            <LineChart className="h-4 w-4 mr-1" />
-            Insights
-          </Link>
-        </Button>
         <Button variant="outline" size="sm" aria-label="Login">
           <LogIn className="h-4 w-4 mr-1" />
           Login
